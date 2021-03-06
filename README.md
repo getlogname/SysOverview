@@ -10,6 +10,7 @@ Meters:
 - RAM: load, clock, SWAP usage.
 - GPU: load, fan RPM, temp.
 - VRAM: junction temp.
+- NETWORK: download and upload.
 
 
 

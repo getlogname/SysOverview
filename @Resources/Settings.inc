@@ -52,6 +52,15 @@ VRAMTempSensorId=0xe0001800
 VRAMTempSensorInstance=0x0
 VRAMTempEntryId=0x1000005
 
+; ------------------------ NETWORK ------------------------------------
+NetDownSensorId=0xf000ea00
+NetDownSensorInstance=0x1
+NetDownEntryId=0x8000002
+
+NetUpSensorId=0xf000ea00
+NetUpSensorInstance=0x1
+NetUpEntryId=0x8000003
+
 ; ------------------------ COLORS -------------------------------------
 BackgroundColor=29, 30, 32, 255
 NameColor=177, 173, 173, 255
