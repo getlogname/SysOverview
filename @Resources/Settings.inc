@@ -1,14 +1,15 @@
-<!--; You must fill in the HWiNFO infos for each of your components like explained below, other variable names should be self-explanatory -->
-<!--; - Launch HWiNFOSharedMemoryViewer.exe located in X:\Users\<UserName>\Documents\Rainmeter\Skins\SysOverview\@Resources-->
-<!--; - Select the sensor you want to monitor and replace the values below with the Sensor Details ID and Instance and also the Entry Details ID for your system-->
+; You must fill in the HWiNFO infos for each of your components like explained below, other variable names should be self-explanatory.
+; - Launch HWiNFOSharedMemoryViewer.exe located in X:\Users\<UserName>\Documents\Rainmeter\Skins\SysOverview\@Resource
+; - Select the sensor you want to monitor and replace the values below with: Sensor Details ID, Instance and the Entry Details ID for your system.
 
 [Rainmeter]
 Update=500
 AccurateText=1
+DynamicWindowSize=1
 
 [Variables]
 ; ------------------------ CPU ---------------------------------------
-; Max histogram y value.
+; Max histogram value.
 CPUMaxGraphRPM=2000
 CPUMaxGraphTemp=100
 ; HWiNFO
@@ -23,7 +24,6 @@ CPUTempSensorInstance=0x0
 CPUTempEntryId=0x1000000
 
 ; ------------------------ RAM & SWAP --------------------------------
-; @TODO: Change names
 RAMLoadSensorId=0xf0000301
 RAMLoadSensorInstance=0x0
 RAMLoadEntryId=0x8000005
@@ -56,17 +56,34 @@ VRAMTempEntryId=0x1000005
 NetDownSensorId=0xf000ea00
 NetDownSensorInstance=0x1
 NetDownEntryId=0x8000002
-
 NetUpSensorId=0xf000ea00
 NetUpSensorInstance=0x1
 NetUpEntryId=0x8000003
 
+; ------------------------ DRIVES -------------------------------------
+D1=C:
+D1SensorId=0xf0000101
+D1SensorInstance=0x2
+D1EntryId=0x7000002
+D2=D:
+D2SensorId=0xf0000101
+D2SensorInstance=0x0
+D2EntryId=0x7000002
+D3=E:
+D3SensorId=0xf0000101
+D3SensorInstance=0x1
+D3EntryId=0x7000002
+D4=T:
+
 ; ------------------------ COLORS -------------------------------------
 BackgroundColor=29, 30, 32, 255
-NameColor=177, 173, 173, 255
+NameColor=106, 106, 106, 255
+ShadowColor=101, 101, 101, 153
 Color1=51, 116, 43, 255
 Color2=145, 154, 38, 255
 Color3=230, 76, 60, 255
+DrivesColor=45, 45, 48, 255
+DrivesLightColor=61, 61, 64, 255
 
 ; ------------------------ FONTS --------------------------------------
 FontFace=Lato
@@ -75,6 +92,7 @@ TitleSize=17
 TitleTypeSize=14
 SubtitleSize=10
 SubtitleTypeSize=8
+DriveLetterSize=12
 
 ; ------------------------ GRID & SIZES -------------------------------
 Width=300
@@ -114,6 +132,7 @@ StringAlign=center
 FontColor=#NameColor#
 FontSize=#NameSize#
 StringAlign=center
+Shadow= 0 | 0 | 2 | #ShadowColor#
 
 [TitleStyle]
 FontSize=#TitleSize#
@@ -122,6 +141,11 @@ FontWeight=100
 [SubtitleStyle]
 FontSize=#SubtitleSize#
 FontWeight=100
+
+[DriveLetterStyle]
+FontSize=#DriveLetterSize#
+FontColor=#NameColor#
+StringAlign=left
 
 [GraphStyle]
 LineColor=#Color1#
