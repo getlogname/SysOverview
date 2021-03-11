@@ -1,8 +1,8 @@
 # SysOverview Widgets
 
-A rainmeter skin to monitor PC system resources usage.
+A Rainmeter skin to monitor PC system resources usage.
 
-
+Actually very poorly written, maybe I'll update when I have some time.
 
 Meters:
 
@@ -11,6 +11,7 @@ Meters:
 - GPU: load, fan RPM, temp.
 - VRAM: junction temp.
 - NETWORK: download and upload.
+- DRIVES: usage + real time usage & also uptime in the bottom right.
 
 
 
@@ -20,10 +21,11 @@ Screenshot:
 
 
 
-Requierements:
+Requirements:
 
 - Rainmeter 4.3.1+
 - HWiNFO 6.42+, make sure Shared Memory Support & Auto Start are enabled.
+- HWiNFO plugin
 
 
 
