@@ -17,7 +17,7 @@ Meters:
 
 Screenshot:
 
-![SysOverview](@Resources/SysOverview.PNG)
+![](%40Resources/SysOverview.png)
 
 
 
