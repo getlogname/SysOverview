@@ -37,15 +37,15 @@ SWAPUsageEntryId=0x8000000
 ; ------------------------ GPU ---------------------------------------
 GPUMaxGraphRPM=4000
 GPUMaxGraphTemp=100
-GPULoadSensorId=0xe0001800
+GPULoadSensorId=0xe0002000
 GPULoadSensorInstance=0x0
 GPULoadEntryId=0x7000000
-GPURPMSensorId=0xe0001800
+GPURPMSensorId=0xe0002000
 GPURPMSensorInstance=0x0
 GPURPMEntryId=0x3000000
-GPUTempSensorId=0xe0001800
+GPUTempSensorId=0xe0002000
 GPUTempSensorInstance=0x0
-GPUTempEntryId=0x100000a
+GPUTempEntryId=0x1000000
 
 ; ------------------------ VRAM ---------------------------------------
 VRAMTempSensorId=0xe0001800
